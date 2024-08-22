@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Royal Card Clash Clone:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Royal_Card_Clash_Clone_jar</output-path>
+    <root id="archive" name="Royal Card Clash Clone.jar">
+      <element id="module-output" name="Royal Card Clash Clone" />
+    </root>
+  </artifact>
+</component>
