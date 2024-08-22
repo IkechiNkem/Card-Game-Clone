@@ -35,7 +35,7 @@ public class GamePanel extends JPanel implements Runnable {
         this.setFocusable(true);
         this.addMouseListener(mouse);
         this.addMouseMotionListener(mouse);
-        new PlayField(mouse, "wallpaper.jpg", 15, 36, cursors);
+        this.playField = new PlayField(mouse, "wallpaper.jpg", 15, 36, cursors);
     }
 
     /**
