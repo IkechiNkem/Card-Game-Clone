@@ -65,7 +65,7 @@ public class PlayField {
      * @param cursors the cursor manager
      */
     public PlayField(Cursors cursors) {
-        this.mouseListener = new Mouse();;
+        this.mouseListener = new Mouse();
         this.cursors = cursors;
         cursors.changeCursor(1); // Sets cursor to its default state
 

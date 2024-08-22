@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CardTest {
 
-    private GamePanel stableEnvironment = new GamePanel("");
-    private PlayField testPlayField = stableEnvironment.getPlayField();
+    private final GamePanel stableEnvironment = new GamePanel("");
+    private final PlayField testPlayField = stableEnvironment.getPlayField();
 
     @Test
     void loadAnim() {
