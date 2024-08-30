@@ -28,6 +28,7 @@ class PlayerCardTest {
         assertEquals(cardValue, card.cardValue);
     }
 
+    @DisplayName("WHEN a PlayerCard")
     @Test
     void setHoverParameters() {
         String cardColor = "Red";
