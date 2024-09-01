@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CursorsTest {
 
-    @DisplayName("WHEN a new Cursors is created, THEN it should not be null and it should contain the panel that it was initi " +
-            "or hovering, and it's x and y coordinates should both be 0")
+    @DisplayName("WHEN a new Cursors is created, THEN it should not be null and it should contain the panel that it was " +
+            "initialized with.")
     @Test
     void testNew(){
         JPanel panel = new JPanel();
@@ -19,6 +19,7 @@ class CursorsTest {
         assertEquals(panel, cursors.panel);
     }
 
+    @DisplayName("WHEN a Cursors is changed, THEN it should reflect the changes by assigning a new cursor number.")
     @Test
     void changeCursor() {
         JPanel panel = new JPanel();
