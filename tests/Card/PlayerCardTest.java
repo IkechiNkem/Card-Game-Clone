@@ -28,7 +28,8 @@ class PlayerCardTest {
         assertEquals(cardValue, card.cardValue);
     }
 
-    @DisplayName("WHEN a PlayerCard")
+    @DisplayName("WHEN a PlayerCard is hovered, THEN its target_y and INITIAL_Y fields should be changed accordingly " +
+            "to the value entered into the method")
     @Test
     void setHoverParameters() {
         String cardColor = "Red";

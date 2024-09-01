@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Objects;
 
-public abstract class Card {
+public class Card {
     public String cardColor;
     public int cardValue;
     protected BufferedImage[] cardSprites;
@@ -58,7 +58,7 @@ public abstract class Card {
     }
 
     /**
-     * A helper method that loads sprite animations from the resources folder.
+     * A helper method that loads sprite animations from the resources folder (specifically from res/cards/sprites).
      * @param spriteName - the prefix of the sprite files to be extracted
      * @param numImg - the number of sprites in the animation
      * @param startingNum - the starting index of the sprite animation.
