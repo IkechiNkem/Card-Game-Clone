@@ -216,14 +216,12 @@ public class PlayField {
     }
 
     private BufferedImage loadBackground(String imgName) {
-        BufferedImage img = null;
         try {
-            img = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream(
+            return ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream(
                     "/wallpaper/" + imgName)));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return img;
     }
 
     /**

@@ -91,14 +91,13 @@ public class Card {
      * @return - the requested image
      */
     protected BufferedImage loadCardImage(String imgName) {
-        BufferedImage img = null;
         try {
-            img = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream(
+            return ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream(
                     "/cards/" + imgName)));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return img;
+
     }
 
     public Boolean containsPoint(Point p){

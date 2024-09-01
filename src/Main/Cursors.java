@@ -65,6 +65,7 @@ public class Cursors {
                 Cursor c = Toolkit.getDefaultToolkit().createCustomCursor(
                         temp, new Point(0, 0), ("cursor" + i));
 
+                assert possibleCursors != null;
                 possibleCursors[i - 1] = (c);
             } catch (IOException e) {
                 throw new RuntimeException(e);

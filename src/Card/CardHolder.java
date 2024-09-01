@@ -31,7 +31,7 @@ public class CardHolder extends Card {
             super.draw(g2d);
         } else {
             Composite oldComposite = g2d.getComposite();
-            Composite newComposite = oldComposite;
+            Composite newComposite;
             if (hovered) {
                 newComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.2f);
             } else {
